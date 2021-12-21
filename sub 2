@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    cout << "Enter your name: ";
+    string name;
+    getline(cin, name);
+    cout << endl;
+    cout << "Enter a number: ";
+    int number, numcopy;
+    cin >> number;
+    cout << "Enter the number for factorial\n";
+    double x, fact = 1;
+    cin >> x;
+    for (int y = x; y > 0; y--)
+    {
+        fact = y * fact;
+    }
+    cout << "The factorial is: " << fact;
+}
